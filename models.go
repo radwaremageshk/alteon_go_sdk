@@ -1,5 +1,15 @@
 package alteongosdk
 
+// CliCommand-
+type CliCommand struct {
+	Items []CliCommandItem `json:"agAlteonCliCommand,omitempty"`
+}
+
+// CliCommandItem -
+type CliCommandItem struct {
+	agAlteonCliCommand       string `json:"agAlteonCliCommand"`
+}
+
 // RealServer -
 type RealServer struct {
 	Items []RealServerItem `json:"SlbNewCfgEnhRealServerTable,omitempty"`
